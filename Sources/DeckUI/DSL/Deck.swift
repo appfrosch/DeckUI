@@ -7,9 +7,10 @@
 
 import Foundation
 
-public struct Deck {
-    let title: String
-    let theme: Theme
+public struct Deck: Identifiable {
+    public let id: UUID = UUID()
+    public let title: String
+    public let theme: Theme
     @SlideArrayBuilder var slides: () -> [Slide]
     
     public init(title: String, theme: Theme = .dark, @SlideArrayBuilder slides: @escaping () -> [Slide]) {
