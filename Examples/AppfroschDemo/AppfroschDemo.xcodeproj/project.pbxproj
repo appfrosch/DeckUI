@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD71ED442A82189400BB916A /* DeckUI in Frameworks */ = {isa = PBXBuildFile; productRef = CD71ED432A82189400BB916A /* DeckUI */; };
 		CD778B2F2A818C82002F492D /* AppfroschDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD778B2E2A818C82002F492D /* AppfroschDemoApp.swift */; };
 		CD778B312A818C82002F492D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD778B302A818C82002F492D /* ContentView.swift */; };
 		CD778B332A818C86002F492D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD778B322A818C86002F492D /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD71ED422A82185100BB916A /* DeckUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = DeckUI; path = ../..; sourceTree = "<group>"; };
 		CD778B2B2A818C82002F492D /* AppfroschDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppfroschDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD778B2E2A818C82002F492D /* AppfroschDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppfroschDemoApp.swift; sourceTree = "<group>"; };
 		CD778B302A818C82002F492D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,17 +29,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD71ED442A82189400BB916A /* DeckUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD71ED412A82185100BB916A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD71ED422A82185100BB916A /* DeckUI */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CD778B222A818C82002F492D = {
 			isa = PBXGroup;
 			children = (
 				CD778B2D2A818C82002F492D /* AppfroschDemo */,
 				CD778B2C2A818C82002F492D /* Products */,
+				CD71ED412A82185100BB916A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +97,9 @@
 			dependencies = (
 			);
 			name = AppfroschDemo;
+			packageProductDependencies = (
+				CD71ED432A82189400BB916A /* DeckUI */,
+			);
 			productName = AppfroschDemo;
 			productReference = CD778B2B2A818C82002F492D /* AppfroschDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +128,8 @@
 				Base,
 			);
 			mainGroup = CD778B222A818C82002F492D;
+			packageReferences = (
+			);
 			productRefGroup = CD778B2C2A818C82002F492D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -359,6 +376,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CD71ED432A82189400BB916A /* DeckUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DeckUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CD778B232A818C82002F492D /* Project object */;
 }
